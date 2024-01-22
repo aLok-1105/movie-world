@@ -1,0 +1,190 @@
+*{
+    
+}
+
+.flex-grid {
+    display: flex;
+ 	justify-content: center;
+ 	flex-wrap: wrap;
+    padding: 10px;
+    margin: 20px;
+}
+.search-bar {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    outline: none;
+  }
+  
+  .search-input::placeholder {
+    color: #999;
+  }
+  
+  .search-button {
+    background-color: #ff4f4f;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 0; /* Remove default button text space */
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-button:hover {
+    background-color: #ff7171;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-button:focus {
+    outline: none;
+  }
+  
+  /* Adjust the icon size */
+  .search-button svg {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type=radio] {
+    accent-color: red;
+  }
+  
+  .checkbox{
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+.box-office{
+  font-size: 30px;
+  margin: 0;
+}
+
+.no-result{
+  font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.show-card{
+  margin: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: #ff4f4f;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.action-btn{
+  width: 100%;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: flex-start !important;
+}
+
+.btn-hov:hover{
+  background-color: #ffffff00 !important;
+}
+
+.card{
+  height: 510px;
+  display: flex ;
+  flex-wrap: wrap ;
+}
+
+.cast{
+  width: 100%;
+    height: auto;
+}
+
+.cast-cont{
+  width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.cast-main-cont{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 8px;
+}
+
+.cast-sub-cont{
+  display: flex;
+  align-items: center;
+  margin: 4px;
+}
+
+.main-data-cont{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-img{
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 5px #e0e0e087;
+}
+
+.main-img-cont{
+  margin-right: 15px;
+}
+
+.tags{
+  background-color: #fce3e3;
+  border-radius: 42px;
+  padding: 1px 7px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .main-data-cont{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.book-ticket-button{
+  margin-top: 20px;
+  background-color: #fce3e3;
+  padding: 15px;
+  border: 0px solid;
+  font-size: 15px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
